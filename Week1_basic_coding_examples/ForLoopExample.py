@@ -1,8 +1,8 @@
 
 if __name__ == '__main__':
-    # for loop
-    # for j in range(9):
-    #    print(j)
+
+    for j in range(9):
+       print(j)
 
 
     for i in range(3, 10):
