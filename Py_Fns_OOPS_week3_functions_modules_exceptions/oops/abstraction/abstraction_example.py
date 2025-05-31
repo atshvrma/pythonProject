@@ -1,17 +1,21 @@
 from abc import ABC, abstractmethod
+#
+# class Animal(ABC):
+#     @abstractmethod
+#     def make_sound(self):
+#         pass
+#
+# class Dog(Animal):
+#     def make_sound_1(self):
+#         print("Bark")
+#
+# class Cat(Animal):
+#     def make_sound(self):
+#         print("Cat")
+#
 
-class Animal(ABC):
-    @abstractmethod
-    def make_sound(self):
-        pass
 
-class Dog(Animal):
-    def make_sound(self):
-        print("Bark")
 
-class Cat(Animal):
-    def make_sound(self):
-        print("Cat")
 
 
 class Remote(ABC):
