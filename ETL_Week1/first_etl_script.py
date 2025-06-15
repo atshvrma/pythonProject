@@ -14,6 +14,7 @@ def transform_data(df):
     df = df.dropna(subset=['email'])  # Remove rows with missing email
     df.loc[:, 'customer_name'] = df['customer_name'].str.title()    # Normalize names
     df = df[df['purchase_amount'] > 1000]  # Filter for high-value customers
+
     return df
 
 
@@ -28,6 +29,8 @@ def load_to_mysql(df):
         password='yourpassword',
         database='customer_sales'
     )
+    # print("Hello worlds", end=", ")
+
     cursor = conn.cursor()
 
     # Create table if it doesn't exist
@@ -54,7 +57,7 @@ def load_to_mysql(df):
 
 # Run ETL
 def run_etl():
-    file_path_of_customer_sales = '/Users/atverma/PycharmProjects/pythonProject/ETL_Week1/customer_sales.csv'  # Example CSV file path
+    file_path_of_customer_sales = 'customer_sales.csv'  # Example CSV file path
     raw_df = extract_csv(file_path_of_customer_sales)
     clean_df = transform_data(raw_df)
     load_to_mysql(clean_df)
