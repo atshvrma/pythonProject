@@ -1,5 +1,7 @@
-customer_id,customer_name,email,purchase_amount
-101,John doe,john@example.com,1500
-102,Alice smith,,1200
-103,bob JOHNSON,bob.j@example.com,900
-104,Mary jane,mary@domain.com,2200
+customer_id,customer_name,email,purchase_amount, dob
+101,John doe,john@example.com,1500, 24-05-1999
+102,Alice smith,sample@email.com,1200,
+103,bob JOHNSON,bob.j@example.com,900,
+104,Mary jane,mary@domain.com,2200,
+101,john doe,john@example.com,3500,
+108,rahul sharma,,200,
